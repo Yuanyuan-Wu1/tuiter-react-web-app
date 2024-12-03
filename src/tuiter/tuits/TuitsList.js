@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {findTuitsThunk}
     from "../../services/tuits-thunks";
+const selectAllTuits = (state) => state.tuits;
 
 const TuitList = () => {
     const {tuits, loading} = useSelector(state => state.tuitsData);
