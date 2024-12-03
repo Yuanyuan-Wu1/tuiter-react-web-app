@@ -1,0 +1,188 @@
+body{
+    font-family: "Arial";
+    background-color: black;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.wd-title {
+    color: white;
+    font-size: 20px;
+    /*margin-top: 12px;*/
+}
+.wd-bookmarks {
+    min-width: 400px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-id {
+    clear: both;
+    color: rgb(110,118,125);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.wd-parent {
+    display:flex;
+    border-top-style: solid;
+    border-top-color: rgb(110,118,125);
+    border-top-width: 1px;
+}
+.wd-part3{
+    padding: 16px;
+}
+
+.wd-dots-1 {
+    content: "\22EF";
+    color:rgb(29,161,242);
+    font-size:20px;
+    float:right;
+    margin-right: 16px;
+    display: inline;
+    font-weight: bold;
+
+}
+
+.wd-avatar {
+    width:48px;
+    height: 48px;
+    border-radius: 48%;
+    display: flex;
+    float: left;
+
+}
+.wd-id-info {
+    align-items: flex-start;
+    display: flex;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.wd-author {
+    font-size: 15px;
+    color: white;
+    display: inline;
+}
+
+.wd-handle {
+    font-size: 15px;
+    color: rgb(110,118,125);
+}
+
+.wd-dots-2 {
+    content: "\22EF";
+    color:white;
+    font-size:20px;
+    float:right;
+    margin-right: 16px;
+    display: inline;
+}
+
+.wd-main-content {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    
+}
+
+.wd-tuiter {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-picture {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow:auto;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(110, 118, 125);
+    border-bottom-width: 0px;
+    position: inherit;
+    width: 504px;
+    height: 264px;
+
+}
+
+.wd-content-padding {
+    padding: 12px;
+    border-top-style: solid;
+    border-top-color: rgb(110,118,125);
+    border-top-width: 1px;
+}
+
+.wd-content-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-content-body {
+    font-size: 15px;
+    color: rgb(110,118,125);
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+.wd-content-link {
+    margin-top: 12px;
+    font-size: 15px;
+    color: rgb(110,118,125);
+    float: left;
+    margin-bottom: 12px;
+}
+
+.wd-link {
+    float: left;
+
+}
+
+.wd-link-container {
+    text-align: left;
+}
+
+.wd-link-container-together {
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+.wd-icons a {
+    padding: 12px;
+    color: rgb(110,118,125);
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.wd-icon-comments {
+    font-size: 12px;
+    color: rgb(110,118,125);
+    padding-left: 5px;
+    padding-right: 16px;
+}
+
+.wd-icon-retweet {
+    color: rgb(110,118,125);
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
+}
+
+.wd-icon-likes {
+    color: red;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
+}
+
+.wd-icon-share {
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 16px;
+    color: rgb(110,118,125);
+}

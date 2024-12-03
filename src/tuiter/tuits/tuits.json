@@ -1,0 +1,54 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "verified": false,
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "logo": "../../../images/spacex.jpg",
+    "handle": "spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
+    "liked": true,
+    "stats": {
+      "replies": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+
+  {
+    "_id": 345,
+    "topic": "Tesla",
+    "userName": "Tesla",
+    "verified": false,
+    "time": "4d",
+    "title": "Autopilot and Full Self-Driving Capability",
+    "logo": "../../../images/tesla.jpg",
+    "handle": "tesla",
+    "tuit": "Autopilot is an advanced driver assistance system that assists your car with steering, accelerating and braking for other vehicles and pedestrians within its lane. It assists with the most burdensome parts of driving and work along side features like emegency braking, collision warning and",
+    "stats": {
+      "replies": 234,
+      "retuits": 543,
+      "likes": 3456
+    }
+  },
+
+  {
+    "_id": 456,
+    "topic": "SpaceX",
+    "userName": "SpaceX",
+    "verified": false,
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "logo": "../../../images/spacex.jpg",
+    "handle": "spacex",
+    "tuit": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Cybertruck is built with an extenior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Staring with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-hard 30X Clod-Rolled stainless-steel structural skin to Tesla armor glass.",
+    "liked": true,
+    "stats": {
+      "replies": 345,
+      "retuits": 321,
+      "likes": 1234
+    }
+  }
+]
