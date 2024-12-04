@@ -1,10 +1,13 @@
 import {createAsyncThunk} from "@reduxjs/toolkit"
 import * as service from "./tuits-service"
+import axios from 'axios';
+
+const TUITS_API = 'https://tuiter-node-server-app-iot1.onrender.com/api/tuits';
 
 export const findTuitsThunk = createAsyncThunk(
     'tuits/findTuits', async () =>{
-        const tuits = await service.findTuits()
-        return tuits
+        const response = await axios.get(TUITS_API);
+        return response.data;
     }
 )
 

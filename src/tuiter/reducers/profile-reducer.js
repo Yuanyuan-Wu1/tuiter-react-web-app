@@ -4,7 +4,7 @@ const profile = {
     "firstName": "Yuanyuan",
     "lastName": "Wu",
     "handle": "yuanyuan",
-    "avatar": "avatar.png",
+    "avatar": "/images/avatar.png",
     "bannerPicture": "banner.jpeg",
     "bio": "MSCS Student @ Northeastern University",
     "website": 'youtube.com/webdevtv',

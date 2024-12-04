@@ -6,7 +6,6 @@ const initialState = {
     loading: false
 }
 
-
 const tuitsSlice = createSlice({
     name: 'tuits',
     initialState,
@@ -34,7 +33,7 @@ const tuitsSlice = createSlice({
         [createTuitThunk.fulfilled]:
             (state, {payload}) => {
                 state.loading = false
-                state.tuits.push(payload)
+                state.tuits.unshift(payload)
             },
         [updateTuitThunk.fulfilled]:
             (state, {payload}) => {
