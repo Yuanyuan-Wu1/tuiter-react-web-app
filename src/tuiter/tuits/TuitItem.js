@@ -2,46 +2,37 @@ import React from "react";
 import TuitStats from "./TuitStats.js";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
-import Avatar from '../components/Avatar';
 
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.profile);
     
+    // 公司 logo 映射
+    const COMPANY_LOGOS = {
+        'spacex': 'https://logo.clearbit.com/spacex.com',
+        'tesla': 'https://logo.clearbit.com/tesla.com',
+        'nasa': 'https://logo.clearbit.com/nasa.gov',
+        'boringcompany': 'https://logo.clearbit.com/boringcompany.com'
+    };
+    
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id));
     }
     
-    // 判断是否是当前用户的 tuit
     const isCurrentUserTuit = currentUser && 
         (tuit.handle === currentUser.handle || tuit.handle === `@${currentUser.handle}`);
     
-    // 获取头像路径
     const getAvatarSrc = () => {
         // 处理 handle（移除 @ 并转换为小写）
         const handle = (tuit.handle || '').replace('@', '').toLowerCase();
         
-        // 1. 检查 tuit 是否有 image 字段
-        if (tuit.image) {
-            // 根据 handle 返回特定公司的图片
-            switch(handle) {
-                case 'spacex':
-                case 'tesla':
-                case 'boringcompany':
-                    return `https://tuiter-node-server-app-iot1.onrender.com/images/${tuit.image}`;
-                default:
-                    // 其他用户的图片
-                    return `https://tuiter-node-server-app-iot1.onrender.com/images/${tuit.image}`;
-            }
+        // 检查是否是公司账号
+        if (COMPANY_LOGOS[handle]) {
+            return COMPANY_LOGOS[handle];
         }
         
-        // 2. 如果是当前用户的 tuit
-        if (isCurrentUserTuit) {
-            return currentUser.avatar || '/images/avatar.png';
-        }
-        
-        // 3. 默认返回默认头像
-        return '/images/avatar.png';
+        // 如果不是公司账号，使用普通头像
+        return tuit.image;
     }
     
     return (
@@ -49,10 +40,12 @@ const TuitListItem = ({tuit}) => {
             <div>
                 <div className="row p-1 d-flex justify-content-between">
                     <div className="col-1">
-                        <Avatar 
+                        <img 
                             src={getAvatarSrc()}
+                            width={40}
+                            height={40}
                             alt={isCurrentUserTuit ? 'My avatar' : `${tuit.handle}'s avatar`}
-                            size={40}
+                            className="rounded-circle"
                         />
                     </div>
                     <div className="col-10 ps-md-0">
